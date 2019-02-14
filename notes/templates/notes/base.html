@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <meta name="robots" content="index, follow">
+    <title>Shared Diary: Your Pocket Note App</title>
+    <link rel="stylesheet" href="{% static 'notes/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'notes/bootstrap/font-awesome/css/all.css' %}">
+</head>
+<body>
+    <div class="container">
+    <div class="jumbotron"><h1>Shared Diary</h1></div>
+     <div class="row">
+            <div class="col-8 left-aside">Left Aside</div>
+            <div class="col-4 right-aside">Right Aside</div>
+        </div>
+    </div>
+
+    <script type="javascript" src="{% static 'notes/bootstrap/js/bootstrap.js' %}"></script>
+<script type="javascript" src="{% static 'notes/bootstrap/js/jquery.min.js' %}"></script>
+    <script src="{% static 'notes/bootstrap/font-awesome/js/all.js' %}"></script>
+
+</body>
+</html>
