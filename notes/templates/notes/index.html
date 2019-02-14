@@ -23,6 +23,8 @@
         <div class="jumbotron mt-2">
             {{ note.body }}
             <span class="ml-2" style="font-size:10px">{{ note.date }} </span>
+            <a href="{% url 'update' note.id %}"><i class="fas fa-edit"></i></a>
+            <a href="{% url 'delete' note.id %}"><i class="fas fa-trash-alt"></i></a>
             <hr>
         </div>
     {% endfor %}

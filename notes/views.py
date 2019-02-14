@@ -25,5 +25,5 @@ def update(request, id):
     return HttpResponse("Update Post")
 
 
-def delete(request):
+def delete(request, id):
     return HttpResponse("Deleting a post")
