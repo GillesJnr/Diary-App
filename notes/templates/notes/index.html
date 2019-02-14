@@ -20,12 +20,15 @@
 
 {% block aside %}
     {% for note in notes %}
-        <div class="jumbotron mt-2">
-            {{ note.body }}
+        <div class="jumbotron mt-1 p-2">
+            <p class="m-1 font-weight-bold text-center">{{ note.title }}</p>
+            <hr>
+            <p class="mt-0 pt-0">{{ note.body }}
             <span class="ml-2" style="font-size:10px">{{ note.date }} </span>
-            <a href="{% url 'update' note.id %}"><i class="fas fa-edit"></i></a>
+            <a href="{% url 'edit' note.id %}"><i class="fas fa-edit"></i></a>
             <a href="{% url 'delete' note.id %}"><i class="fas fa-trash-alt"></i></a>
             <hr>
+            </p>
         </div>
     {% endfor %}
 {% endblock %}

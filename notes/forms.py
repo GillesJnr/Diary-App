@@ -14,4 +14,4 @@ class NoteForm(forms.ModelForm):
 
     def __int__(self, *args, **kwargs):
         super(NoteForm, self).__init__(*args, **kwargs)
-        self.fields['status'].empty_label = "Select"
+        self.fields['status'].empty_label = "Select status"
