@@ -11,9 +11,11 @@
 </head>
 <body>
     <div class="container">
-    <div class="jumbotron"><h1>Shared Diary</h1></div>
+    <div class="jumbotron mt-3"><h1>Shared Diary</h1></div>
      <div class="row">
-            <div class="col-8 left-aside">Left Aside</div>
+            <div class="col-8 left-aside">
+                {% block content %} Left Aside {% endblock %}
+            </div>
             <div class="col-4 right-aside">Right Aside</div>
         </div>
     </div>
